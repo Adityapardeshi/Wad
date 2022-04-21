@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="./dashboard.css" rel="stylesheet">
+    <title>Stats</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <a class="navbar-brand " href="#">SunPe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Stats</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!--sidebar-->
+    
+      
+      <div class="offcanvas offcanvas-start sidebar-nav bg-dark text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Statistics</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-dark">
+            <div class="navbar-nav">
+                <li>
+                    <a href="#" class="nav-link active px-3">Home</a>
+                </li>
+                <hr class="dropdown-divider">
+                <li>
+                    <a href="#" class="nav-link active px-3">Dashboard</a>
+                </li>
+                <hr class="dropdown-divider">
+                <li>
+                    <a href="#" class="nav-link active px-3">Settings</a>
+                </li>
+                <hr class="dropdown-divider">
+                <li>
+                    <a href="#" class="nav-link active px-3">Profile</a>
+                </li>
+                <hr class="dropdown-divider">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main class="mt-5 pt-3">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-12 fs-3">
+                     Dashboard
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-3 mb-3">
+                    <div class="card shadow-sm text-white fw-bolder mb-3" style="max-width: 18rem; background-color: #2B2E4A; border: none;">
+                        <div class="card-header">Total Balance</div>
+                        <div class="card-body">
+                          $400
+                        </div>
+                      </div>
+                 </div>
+                 <div class="col-md-3 mb-3">
+                    <div class="card shadow-sm text-white fw-bolder mb-3" style="max-width: 18rem;  background-color: #E84545; border: none;">
+                        <div class="card-header">Total Coins</div>
+                        <div class="card-body">
+                          5000
+                        </div>
+                      </div>
+                 </div>
+                 <div class="col-md-3 mb-3">
+                    <div class="card shadow-sm text-white fw-bolder mb-3" style="max-width: 18rem;  background-color: #903749; border: none;">
+                        <div class="card-header">Total Transactions</div>
+                        <div class="card-body">
+                          40
+                        </div>
+                      </div>
+                 </div>
+                 <div class="col-md-3 mb-3">
+                    <div class="card shadow-sm text-white fw-bolder mb-3" style="max-width: 18rem; background-color: #53354A; border: none;">
+                        <div class="card-header">Spendings</div>
+                        <div class="card-body">
+                          $900
+                        </div>
+                      </div>
+                 </div>
+             </div>
+
+             <!---graphs-->
+             <div class="row">
+                 <div class="col-md-6">
+                    <div class="card borde-1 shadow-sm mb-3">
+                        <div class="card-header">This Year</div>
+                        <div class="card-body">
+                            <canvas id="myChart" class="pt-3 pb-2" width="500" height="350"></canvas>
+                        </div>
+                      </div>
+                 </div>
+                 <div class="col-md-6">
+                    <div class="card border-1 shadow-sm mb-3">
+                        <div class="card-header">This Year</div>
+                        <div class="card-body">
+                            <canvas id="myChart2" class="pt-3 pb-2" width="500" height="350"></canvas>
+                        </div>
+                      </div>
+                 </div>
+             </div>
+
+             <!--history-->
+             <div class="row">
+                <div class="col-md-6">
+                  <div class="card shadow-sm border-1 mb-3">
+                    <div class="card-header">Transaction history</div>
+                    <div class="card-body">
+                      <table class="table-striped table table-responsive">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">From/to</th>
+                            <th scope="col">Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td class="fw-bold">16 Jan</td>
+                            <td style="color: green;">Starbucks</td>
+                            <td style="color: red;">-50$</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td class="fw-bold">17 Jan</td>
+                            <td style="color: green;">Music.com</td>
+                            <td style="color: red;">-100$</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td class="fw-bold">19 Jan</td>
+                            <td style="color: green;">cricket.in</td>
+                            <td style="color: red;">-200$</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-sm border-1 mb-3">
+                    <div class="card-header">Rewards history</div>
+                    <div class="card-body">
+                      <table class="table-striped table table-responsive">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Claimed Date</th>
+                            <th scope="col">Voucher Name</th>
+                            <th scope="col">Coins Deducted</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td class="fw-bold">25 Jan</td>
+                            <td style="color: green;">Amazon</td>
+                            <td style="color: red;">-100C</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td class="fw-bold">13 Feb</td>
+                            <td style="color: green;">Paypal</td>
+                            <td style="color: red;">-100C</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td class="fw-bold">21 Mar</td>
+                            <td style="color: green;">Google Play</td>
+                            <td style="color: red;">-200C</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+             </div>
+         </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./dashboard.js"></script>
+</body>
+</html>

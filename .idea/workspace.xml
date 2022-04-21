@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b501007-ecb6-44fd-827d-ccd0590433b3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="26jTf8Q5nmy4Q7GEnVSYvpEmpjV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../309048C99048976E/aditya/New Folder/cozastore-master" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b501007-ecb6-44fd-827d-ccd0590433b3" name="Default Changelist" comment="" />
+      <created>1647936095980</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647936095980</updated>
+      <workItem from="1647936099690" duration="3564000" />
+      <workItem from="1648048278210" duration="9194000" />
+      <workItem from="1648107853745" duration="814000" />
+      <workItem from="1648454844108" duration="2863000" />
+      <workItem from="1648543949566" duration="2131000" />
+      <workItem from="1650468271270" duration="9275000" />
+      <workItem from="1650529483770" duration="767000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="416" y="168" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1647938531174">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="416" y="168" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1366.768@0.0.1366.768" timestamp="1647938531174" />
+    <state x="466" y="142" width="432" height="482" key="FileChooserDialogImpl" timestamp="1650472687620">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="466" y="142" width="432" height="482" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1650472687620" />
+    <state x="195" y="20" key="SettingsEditor" timestamp="1647938531947">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="195" y="20" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1647938531947" />
+    <state x="347" y="171" key="run.anything.popup" timestamp="1647937805379">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="347" y="171" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1647937805379" />
+    <state x="347" y="34" width="670" height="676" key="search.everywhere.popup" timestamp="1647939633359">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="347" y="34" width="670" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1647939633359" />
+  </component>
+</project>
