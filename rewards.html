@@ -14,9 +14,7 @@
 <!---navbar-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
     <div class="container-fluid">
-        <button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
         <a class="navbar-brand " href="#">SunPe</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,70 +39,29 @@
     </div>
 </nav>
 
-<!--sidebar-->
-
-<div class="offcanvas offcanvas-start sidebar-nav bg-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Rewards</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <div class="navbar-light">
-            <div class="navbar-nav">
-                <li>
-                    <a href="#" class="nav-link active px-3">Home</a>
-                </li>
-                <hr class="dropdown-divider">
-                <li>
-                    <a href="#" class="nav-link active px-3">Dashboard</a>
-                </li>
-                <hr class="dropdown-divider">
-                <li>
-                    <a href="#" class="nav-link active px-3">Settings</a>
-                </li>
-                <hr class="dropdown-divider">
-                <li>
-                    <a href="#" class="nav-link active px-3">Profile</a>
-                </li>
-                <hr class="dropdown-divider">
-            </div>
-        </div>
-    </div>
-</div>
 
 <!---main content-->
 <main>
     <div class="container pt-4 px-4">
     <div class="row">
         <div class="col-md-4">
-           <div class="card shadow-lg" style="min-height: 12rem; border-radius: 20px;">
-               <div class="card-title m-4 fw-bold">
-                   Coins
-                   <!--<canvas id="CoinsChart" class="pt-3 pb-2" width="500" height="350"></canvas>-->
-               </div>
+           <div class="card shadow-lg" style="min-height: 12rem; border-radius: 20px; background-color: #FFE3AC">
                <div class="card-body text-center">
                    <!--<h1 class="h1 position-absolute" style=" font-size: 7rem;">84</h1>-->
-                   <canvas id="CoinsChart" class="pt-3 pb-2" width="500" height="350"></canvas>
+                   <div style="position: relative">
+                       <div style="width: 100%; height: 40px; position: absolute; top: 50%; left: 0; margin-top: -10px; line-height:19px; text-align: center; z-index: 0">
+                           <strong style="font-size: 50px">174</strong><Br />
+                           Coins
+                       </div>
+                   <canvas id="CoinsChart"  width="500" height="350"></canvas>
+                   </div>
                </div>
            </div>
         </div>
         <div class="col-md-8">
             <div class="card shadow-lg" style=" border-radius: 20px;">
-            <section class="pt-5 mx-3 rounded pb-5 px-2">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 text-md-start text-center py-6">
-                            <h1 class="mb-4 fs-9 fw-bold">How to earn SunPe <br class="d-none d-xl-block" /> Coins</h1>
-                            <p class="mb-6 lead text-secondary">Just spend your money on necessary things<br class="d-none d-xl-block" />& in exchange you will get SunPe Coins,<br class="d-none d-xl-block" />by which you can unlock exciting rewards!</p>
-
-                        </div>
-                        <div class="col-md-6 text-end">
-                            <img class="pt-7 pt-md-0 img-fluid" src="./undraw_gift_re_qr17.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+                <canvas class="p-4" id="RewardsChart"  width="500" height="245"></canvas>
+            </div>
         </div>
     </div>
 
@@ -125,10 +82,10 @@
                     <div class="col-md-12">
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
-                                <button class="nav-link active" aria-current="page" data-filter="*">All</button>
+                                <a class="nav-link active list" aria-current="page" data-filter="all">All</a>
                             </li>
                             <li class="nav-item">
-                                <button class="nav-link" data-filter=".claimed">Claimed</button>
+                                <a class="nav-link list" data-filter="claimed">Claimed</a>
                             </li>
                         </ul>
                     </div>
@@ -137,14 +94,13 @@
                 <div class="row">
                     <!-- Single Product -->
                     <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div id="product-1" class="single-product">
+                        <div id="product-1" class="single-product claimed">
                             <div class="part-1">
-
                             </div>
                             <div class="part-2">
                                 <h3 class="product-title">Amazon</h3>
-
                                 <h4 class="product-price">Worth $49.99</h4>
+                                <h5 class="product-price">50 Coins</h5>
                                 <button class="btn btn-success">Claim</button>
                             </div>
                         </div>
@@ -157,6 +113,7 @@
                             <div class="part-2">
                                 <h3 class="product-title">Puma</h3>
                                 <h4 class="product-price">Worth $49.99</h4>
+                                <h5 class="product-price">50 Coins</h5>
                                 <button class="btn btn-success">Claim</button>
                             </div>
                         </div>
@@ -169,8 +126,8 @@
                             </div>
                             <div class="part-2">
                                 <h3 class="product-title">Paypal</h3>
-
                                 <h4 class="product-price">Worth $49.99</h4>
+                                <h5 class="product-price">50 Coins</h5>
                                 <button class="btn btn-success">Claim</button>
                             </div>
                         </div>
@@ -184,6 +141,7 @@
                             <div class="part-2">
                                 <h3 class="product-title">Flipkart</h3>
                                 <h4 class="product-price">Worth $49.99</h4>
+                                <h5 class="product-price">50 Coins</h5>
                                 <button class="btn btn-success">Claim</button>
                             </div>
                         </div>
@@ -192,53 +150,53 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                         <div id="product-5" class="single-product">
                             <div class="part-1">
-
                             </div>
                             <div class="part-2">
                                 <h3 class="product-title">Adidas</h3>
-
                                 <h4 class="product-price">Worth $49.99</h4>
+                                <h5 class="product-price">50 Coins</h5>
                                 <button class="btn btn-success">Claim</button>
                             </div>
                         </div>
                     </div>
                     <!-- Single Product -->
                     <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div id="product-2" class="single-product">
+                        <div id="product-6" class="single-product">
                             <div class="part-1">
 
                             </div>
                             <div class="part-2">
                                 <h3 class="product-title">Rolex</h3>
                                 <h4 class="product-price">Worth $49.99</h4>
+                                <h5 class="product-price">50 Coins</h5>
                                 <button class="btn btn-success">Claim</button>
                             </div>
                         </div>
                     </div>
                     <!-- Single Product -->
                     <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div id="product-3" class="single-product">
+                        <div id="product-7" class="single-product">
                             <div class="part-1">
 
                             </div>
                             <div class="part-2">
                                 <h3 class="product-title">Dell</h3>
-
                                 <h4 class="product-price">Worth $49.99</h4>
+                                <h5 class="product-price">50 Coins</h5>
                                 <button class="btn btn-success">Claim</button>
                             </div>
                         </div>
                     </div>
                     <!-- Single Product -->
                     <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div id="product-4" class="single-product">
+                        <div id="product-8" class="single-product">
                             <div class="part-1">
-
                             </div>
                             <div class="part-2">
                                 <h3 class="product-title">Myntra</h3>
                                 <h4 class="product-price">Worth $49.99</h4>
-                                <button class="btn btn-success">Claim</button>
+                                <h5 class="product-price">50 Coins</h5>
+                                <button id="d" class="btn btn-success">Claim</button>
                             </div>
                         </div>
                     </div>
@@ -248,7 +206,9 @@
     </div>
 
 </main>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./rewards.js"></script>
+
 </body>
 </html>
